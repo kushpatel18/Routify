@@ -1,0 +1,66 @@
+.login {
+  /* background-image: linear-gradient(to bottom right, #ffffff, #7ec0e4); */
+  width: 100%;
+  height: 100%;
+}
+
+.login > .heading > h1 {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.login > .login-body {
+  width: 100%;
+  height: 100%;
+  margin: 48px 16px;
+  display: flex;
+  justify-content: end;
+  background-image: url(../../assets/loginPic.svg);
+  background-repeat: no-repeat;
+  /* margin: 36px 0; */
+}
+
+.login > .login-body > .login-container {
+  width: 30%;
+  max-width: 450px;
+  min-width: 400px;
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 96px;
+}
+.login > .login-body > .login-container > .login-heading {
+  padding: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  /* margin-bottom: 18px; */
+}
+.login > .login-body > .login-container > .login-options {
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: large;
+}
+.login > .login-body > .login-container > .login-form {
+  width: 80%;
+  padding: 8px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: large;
+}
+
+.login > .login-body > .login-container > .login-form > .from-group > label {
+  font-size: 50px;
+}
