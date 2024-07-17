@@ -1,0 +1,73 @@
+.admin-dashboard {
+  display: flex;
+}
+
+.dashboard {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 800px;
+  min-width: 400px;
+  margin-bottom: 20px;
+}
+
+.routes-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.routes-table th {
+  padding: 12px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: x-large;
+  border: 2px solid #ffffff;
+}
+.routes-table td {
+  padding: 12px;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+  font-size: larger;
+  border: 2px solid #ffffff;
+}
+
+.routes-table th {
+  background-color: #5b9bd5;
+  color: white;
+}
+
+.routes-table tr:nth-child(even) {
+  background-color: #bdd7ee;
+}
+.routes-table tr:nth-child(odd) {
+  background-color: #ddebf7;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.route-button {
+  padding: 10px 20px;
+  background-color: #6ec1e4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.route-button:hover {
+  background-color: #1e90ff;
+}

@@ -1,0 +1,103 @@
+/* src/pages/Student/Settings/Settings.css */
+.settings {
+  display: flex;
+}
+.settings > .settings-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.settings > .settings-page > .settings-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.settings > .settings-page > .settings-header img {
+  height: 80px;
+}
+
+.settings > .settings-page > .settings-form-container {
+  background: linear-gradient(to top, #7ec0e4 7%, #afd0e2 100%, #5fa0c5 100%);
+
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.help-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.settings > .settings-page > .settings-form-container > .settings-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings
+  > .settings-page
+  > .settings-form-container
+  > .settings-form
+  > .form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.settings
+  > .settings-page
+  > .settings-form-container
+  > .settings-form
+  > .form-group
+  label {
+  font-weight: 700;
+  width: 30%;
+  font-size: larger;
+}
+
+.settings
+  > .settings-page
+  > .settings-form-container
+  > .settings-form
+  > .form-group
+  input {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #186996;
+  width: 60%;
+  color: #7f7e7e;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.settings
+  > .settings-page
+  > .settings-form-container
+  > .settings-form
+  > .confirm-button {
+  background-color: #4689ad;
+  color: white;
+  border: 1px solid #4689ad;
+  border-radius: 10px;
+  padding: 5px 30px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: larger;
+}

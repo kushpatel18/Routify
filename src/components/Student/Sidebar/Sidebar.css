@@ -1,0 +1,75 @@
+/* src/Sidebar.css */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #6ec1e4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar > .profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar > .profile > .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar > .menu {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.sidebar > .menu > .menu-item {
+  width: 100%;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-weight: 500;
+  color: black;
+}
+
+.sidebar > .menu > .menu-item i {
+  margin-right: 10px;
+  /* font-size: larger; */
+}
+
+.sidebar > .menu > .menu-item img {
+  height: 25px;
+}
+
+.sidebar > .menu > .menu-item.active,
+.sidebar > .menu > .menu-item:hover {
+  background-color: #20648a;
+  border-radius: 30px;
+  color: white;
+}
+
+.sidebar > .footer {
+  width: 100%;
+  margin-top: auto; /* This pushes the footer to the bottom */
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.sidebar > .footer > .menu-item {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar > .footer > .menu-item.active,
+.sidebar > .footer > .menu-item:hover {
+  color: #20648a;
+}

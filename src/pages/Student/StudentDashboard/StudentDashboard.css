@@ -1,0 +1,100 @@
+/* src/Dashboard.css */
+.student-dashboard {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.student-dashboard > .dashboard {
+  padding-top: 40px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: flex-start; /* Ensure containers align at the top */
+}
+
+.student-dashboard > .dashboard > .map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+}
+.student-dashboard > .dashboard > .map-container > .map h3 {
+  text-align: center;
+}
+.student-dashboard > .dashboard > .map-container > .map img {
+  height: 300px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.student-dashboard > .dashboard > .map-container > .info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.student-dashboard > .dashboard > .map-container > .info > .info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.student-dashboard
+  > .dashboard
+  > .map-container
+  > .info
+  > .info-item
+  > .info-label {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.student-dashboard
+  > .dashboard
+  > .map-container
+  > .info
+  > .info-item
+  > .info-value {
+  background-color: #afd0e2;
+  padding: 5px 10px;
+  border-radius: 30px;
+  width: 60%;
+  font-size: larger;
+  max-width: 270px;
+  color: #7f7e7e;
+  font-weight: 500;
+}
+
+.student-dashboard > .dashboard > .bus-container {
+  width: 250px;
+  /* max-width: fit-content; */
+  min-width: fit-content;
+}
+
+.student-dashboard > .dashboard > .bus-container h3 {
+  text-align: center;
+}
+
+.student-dashboard > .dashboard > .bus-container > .bus-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6ec1e4;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.student-dashboard > .dashboard > .bus-container > .bus-info > .bus-image {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.bus-details p {
+  margin: 5px 0;
+  font-size: larger;
+}
