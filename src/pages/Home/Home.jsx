@@ -11,11 +11,11 @@ const Home = () => {
   }
   return (
     <div>
-     <header class="header">
-        <a href="#" class="logo">Routify</a>
+     <header className="header">
+        <a href="#" className="logo">Routify</a>
 
-        <nav class="navbar">
-            <a href="#" class="active">About</a>
+        <nav className="navbar">
+            <a href="#" className="active">About</a>
             <a href="#">Notification</a>
             <a href="#">Profile</a>
         </nav>
