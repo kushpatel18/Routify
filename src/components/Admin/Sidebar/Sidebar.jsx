@@ -22,7 +22,7 @@ const Sidebar = ({ name = 'Admin 1234' }) => {
         </Link>
       </div>
       <div className="footer">
-        <Link to="/logout" className="menu-item">
+        <Link to="/login" className="menu-item">
           <i className="fas fa-sign-out-alt"></i> Logout
         </Link>
       </div>

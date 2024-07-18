@@ -34,23 +34,29 @@ const Login = () => {
       return;
     }
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/users/login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ enrollNo, password }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_API_BASE_URL}/api/users/login`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ enrollNo, password }),
+        }
+      );
 
       const data = await response.json();
 
       if (response.ok) {
         localStorage.setItem("token", data.token);
         // Redirect to another page or perform another action
-        try{
-          navigate('/')
-        }
-        catch(err){
+        try {
+          if (role === "student") {
+            navigate("/student");
+          } else {
+            navigate("/admin");
+          }
+        } catch (err) {
           console.log(err);
         }
         console.log("Successful");
@@ -61,7 +67,6 @@ const Login = () => {
       console.error("Error:", error);
     }
   };
-
 
   return (
     <div className="login">
@@ -101,20 +106,6 @@ const Login = () => {
               />
               <label className="form-check-label" htmlFor="student">
                 Student
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="driver"
-                onChange={(e) => {
-                  setRole(e.target.value);
-                }}
-              />
-              <label className="form-check-label" htmlFor="driver">
-                Driver
               </label>
             </div>
           </div>
