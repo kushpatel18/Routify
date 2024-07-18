@@ -6,7 +6,7 @@ import Settings from "../../../assets/settings.svg";
 import "./Sidebar.css";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
-const Sidebar = ({ name = "Mangalya Shah" }) => {
+const Sidebar = ({ name  }) => {
   const navigate = useNavigate();
   const [activeItem, setActiveItem] = useState("/student");
 
