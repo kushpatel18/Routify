@@ -7,7 +7,7 @@ const Settings = () => {
   return (
     <div className="settings">
       <div className="sidebar">
-        <Sidebar />
+        <Sidebar name={"Evelyn Walker"} />
       </div>
       <div className="settings-page">
         <div className="settings-header">
@@ -19,7 +19,7 @@ const Settings = () => {
           <form className="settings-form">
             <div className="form-group">
               <label htmlFor="name">Name:</label>
-              <input type="text" id="name" value="Mangalya Shah" readOnly />
+              <input type="text" id="name" value="Evelyn Walker" readOnly />
             </div>
             <div className="form-group">
               <label htmlFor="enrollment">Enrollment No.:</label>
